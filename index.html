@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Number Game</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="assets/images/favicons/favicon.png">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  </head>
+  <body>
+    <section id="title">
+      <div class="row">
+        <div class="small-10 medium-8 small-centered columns">
+          <h2 class="heading">Happy Number Game</h2>
+          <div class="small-10 medium-3 small-centered columns heading-border"></div>
+        </div>
+      </div>
+    </section>
+    <section id="numbers">
+      <div class="row">
+        <div class="small-10 medium-8 small-centered">
+          <h3 class="subtitle">Guess 3 numbers...</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-10 medium-8 small-centered form-box">
+          <form  class="form">
+            <input type="number" name="number" placeholder="first number" required>
+            <input type="number" name="number" placeholder="second number" required>
+            <input type="number" name="number" placeholder="first number">
+            <input type="submit" value="Submit" class="button">
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="score">
+      <div class="row">
+        <div class="small-10 medium-8 small-centered">
+          <h4 class="score">Score:</h4>
+        </div>
+      </div>
+    </section>
+    <br/><br/>
+    <section id="give-up">
+      <div class="row">
+        <div class="small-10 medium-8 small-centered">
+          <input id="clickMe" type="button" value="Give Up" onclick="doFunction();" />
+        </div>
+      </div>
+    </section>
+    <footer id="bottom">
+      <div class="row">
+        <div class="copyright small-12 medium-4 small-centered columns">
+          <p>
+              Copyright &copy; 2016 Julie Graceffa
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
