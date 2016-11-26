@@ -7,7 +7,7 @@
     <title>Happy Number Game</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="icon" href="assets/images/favicons/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
     <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
@@ -30,10 +30,10 @@
       <div class="row">
         <div class="small-10 medium-8 small-centered form-box">
           <form  class="form">
-            <input type="number" name="number" placeholder="first number" required>
-            <input type="number" name="number" placeholder="second number" required>
-            <input type="number" name="number" placeholder="first number">
-            <input type="submit" value="Submit" class="button">
+            <input type="number" id="firstNumber" name="number1" placeholder="first number" autofocus required>
+            <input type="number" id="secondNumber" name="number2" placeholder="second number" required>
+            <input type="number" id="thirdNumber" name="number3" placeholder="third number" required>
+            <input type="submit" value="Submit" class="button" id="mybutton">
           </form>
         </div>
       </div>
@@ -42,6 +42,7 @@
       <div class="row">
         <div class="small-10 medium-8 small-centered">
           <h4 class="score">Score:</h4>
+          <h4 id="total" class="score">100</h4>
         </div>
       </div>
     </section>
@@ -54,7 +55,7 @@
       </div>
     </section>
     <footer id="bottom">
-      <div class="row">
+      <div class="row copyright">
         <div class="copyright small-12 medium-4 small-centered columns">
           <p>
               Copyright &copy; 2016 Julie Graceffa

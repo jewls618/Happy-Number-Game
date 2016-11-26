@@ -5,8 +5,9 @@ section#title {
 
 .heading {
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   padding: 20px;
+  font-family: 'Bungee', sans-serif;;
 }
 
 .heading-border {
@@ -31,17 +32,23 @@ h4.score {
 section#give-up {
   text-align: center;
   font-size: 1em;
+  margin-bottom: 20px;
 }
 
 #bottom {
-  color: black;
-  padding-top: 50px;
+  color: white;
+  background-color: #7E7E7F;
+}
+
+footer#bottom {
+  background-color: #7E7E7F;
 }
 
 .copyright {
   font-size: 12px;
   text-align: center;
-  padding-top: 65px;
+  padding-top: 15px;
+  background-color: #7E7E7F;
 }
 
 @media (max-width: 700px) {
