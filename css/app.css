@@ -17,16 +17,59 @@ section#title {
 h3.subtitle {
   margin-top: 50px;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
+}
+
+h6#alert {
+  color: red;
+  text-align: left;
+  font-size: 0.8em;
 }
 
 .form-box {
   text-align: center;
 }
 
+#mybutton {
+  background-color: #12CC8C;
+  border-radius: 5px;
+}
+
+#mybutton:hover {
+  opacity: 0.5;
+}
+
+#clickMe {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#clickMe:hover {
+  opacity: 0.5;
+}
+
+h3#guess {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+h3#message {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
 h4.score {
   text-align: center;
-  font-size: 1em;
+  font-size: 1.8em;
+  color: #CA0755;
+  font-family: 'Bungee', sans-serif;;
+}
+
+#total {
+  font-weight: bold;
 }
 
 section#give-up {
@@ -53,11 +96,14 @@ footer#bottom {
 
 @media (max-width: 700px) {
   .heading {
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 5px;
   }
   h3.subtitle {
     margin-top: 20px;
-    font-size: 1.23em;
+    font-size: 1.2em;
+  }
+  h4.score {
+    font-size: 1em;
   }
 }

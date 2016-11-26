@@ -24,7 +24,12 @@
     <section id="numbers">
       <div class="row">
         <div class="small-10 medium-8 small-centered">
-          <h3 class="subtitle">Guess 3 numbers...</h3>
+          <h3 class="subtitle">Guess a "happy" combination of 3 numbers...</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-10 medium-8 small-centered">
+          <h6 id="alert"></h6>
         </div>
       </div>
       <div class="row">
@@ -41,7 +46,16 @@
     <section id="score">
       <div class="row">
         <div class="small-10 medium-8 small-centered">
-          <h4 class="score">Score:</h4>
+          <h3 id="guess"></h3>
+          <h3 id="message"></h3>
+        </div>
+      </div>
+    </section>
+    <br/><br/>
+    <section id="score">
+      <div class="row">
+        <div class="small-10 medium-8 small-centered">
+          <h4 class="score">SCORE:</h4>
           <h4 id="total" class="score">100</h4>
         </div>
       </div>
@@ -50,7 +64,9 @@
     <section id="give-up">
       <div class="row">
         <div class="small-10 medium-8 small-centered">
-          <input id="clickMe" type="button" value="Give Up" onclick="doFunction();" />
+          <input id="clickMe" type="button" input="submit" value="ok, give up" onclick="myFunction()"  /><br/><br/>
+          <div id="answer"></div>
+          <div id="demo"></div>
         </div>
       </div>
     </section>
