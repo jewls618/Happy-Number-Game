@@ -41,18 +41,18 @@ $(document).ready(() => {
 
     let score = document.getElementById("total").innerHTML;
     if (factTotal === finalInteger){
-        document.getElementById("guess").innerHTML = factTotal + " is the happy number!";
+        document.getElementById("guess").innerHTML = factTotal + " is the happy number :)";
         document.getElementById("message").innerHTML = "YOU WIN!"
         document.getElementById("total").innerHTML = score;
         document.getElementById("alert").innerHTML = "";
       } else {
-        document.getElementById("guess").innerHTML = firstNumber + " " + secondNumber + " " + thirdNumber + " is not the happy combo";
+        document.getElementById("guess").innerHTML = firstNumber + " " + secondNumber + " " + thirdNumber + " is not the happy combo :(";
         document.getElementById("message").innerHTML = "Try Again"
         score -= 10;
         document.getElementById("total").innerHTML = score;
         document.getElementById("alert").innerHTML = "";
         if (score <= 0) {
-          document.getElementById("guess").innerHTML = firstNumber + " " + secondNumber + " " + thirdNumber + " is not the happy combo."
+          document.getElementById("guess").innerHTML = firstNumber + " " + secondNumber + " " + thirdNumber + " is not the happy combo :("
           document.getElementById("message").innerHTML = "GAME OVER"
           document.getElementById("mybutton").setAttribute("disabled", "disabled")
           document.getElementById("alert").innerHTML = "";
@@ -62,7 +62,7 @@ $(document).ready(() => {
 
   $('#clickMe').click(() => {
     document.getElementById("answer").innerHTML = "Happy Number = 145";
-    document.getElementById("demo").innerHTML = "145 = 1! + 4! + 5!";
+    document.getElementById("demo").innerHTML = "1! + 4! + 5! = 145";
     document.getElementById("total").innerHTML = 0;
     document.getElementById("guess").innerHTML = "";
     document.getElementById("message").innerHTML = "GAME OVER"
